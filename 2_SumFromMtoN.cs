@@ -2,17 +2,16 @@ using System;
 
 public class HelloWorld
 {
-    public static void Main(string[] args)
-    {
-        const int M = 4, N = 3;
-        int Sum(int m, int n)
+    static int Sum(int m, int n)
         {
             if(m>n)
                 return 0;
             else
                 return m+Sum(m+1,n);
-            m++;
         }
+    public static void Main(string[] args)
+    {
+        const int M = 4, N = 8;
         Console.WriteLine(Sum(M,N));
     }
 }
